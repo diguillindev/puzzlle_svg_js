@@ -1,0 +1,137 @@
+html, body {
+  margin: 0;
+  height: 100vh;
+  background-color: #1C2331;
+  font-family: "Balsamiq Sans";
+}
+
+.playground {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+#diff_choose {
+  position: absolute;
+  top: -200%;
+  left: 0px;
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  z-index: 3;
+  transition: top 0.2s;
+  text-align: center;
+}
+#diff_choose.active {
+  top: 0px;
+}
+
+#overlay {
+  position: absolute;
+  top: -200%;
+  left: 0px;
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  z-index: 3;
+  transition: top 0.2s;
+}
+#overlay.active {
+  top: 0px;
+}
+#overlay #help, #overlay #win {
+  position: relative;
+  top: 10%;
+}
+#overlay #help h1, #overlay #win h1 {
+  color: white;
+  font-size: 60px;
+}
+#overlay #help #result, #overlay #win #result {
+  color: white;
+}
+#overlay #help #result span, #overlay #win #result span {
+  color: #FF8800;
+}
+#overlay #help img, #overlay #win img {
+  display: inline-block;
+  max-width: 300px;
+  max-height: 300px;
+}
+#overlay #help a, #overlay #win a {
+  display: block;
+  color: white;
+  font-size: 36px;
+  text-decoration: none;
+}
+
+#diff_choose {
+  position: absolute;
+  top: -200%;
+  left: 0px;
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  z-index: 3;
+  transition: top 0.2s;
+  background-color: #1C2331;
+}
+#diff_choose.active {
+  top: 0px;
+}
+#diff_choose h1 {
+  color: white;
+  letter-spacing: 2px;
+}
+#diff_choose button {
+  position: relative;
+  border: none;
+  background-color: #33b5e5;
+  font-size: 22px;
+  margin: 10px;
+  padding: 10px 12px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+#diff_choose button:hover {
+  background-color: #0099CC;
+}
+
+#menu_opener {
+  position: fixed;
+  top: -10px;
+  left: -11px;
+  border: none;
+  font-size: 40px;
+  background-color: #33b5e5;
+  border-radius: 50%;
+  padding: 14px;
+  font-weight: 900;
+  z-index: 999;
+}
+#menu_opener span {
+  position: relative;
+  display: block;
+  width: 25px;
+  height: 2px;
+  border-bottom: 3px solid black;
+  margin-top: 3px;
+  transition: transform 0.2s, top 0.2s, left 0.2s, opacity 0.2s;
+}
+#menu_opener.active span:first-child {
+  transform: rotate(-45deg);
+  top: 10px;
+}
+#menu_opener.active span:nth-child(2) {
+  opacity: 0;
+}
+#menu_opener.active span:last-child {
+  transform: rotate(45deg);
+  top: -6px;
+  left: 2px;
+}
+

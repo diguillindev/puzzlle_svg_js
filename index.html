@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Picture Puzzle No jQuery</title>
+  <link rel='stylesheet' href='https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital@1&amp;display=swap'><link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!--The game holder div-->
+<div class="playground"></div>
+
+<div id="overlay">
+
+	<div id="win">
+		<h1>You win!</h1>
+		<p id="result"></p>
+		<a href="javascript:void(0);" class="other_img">&#8635; Other Image</a>
+	</div>
+
+	<div id="help">
+		<img src="kepek/favico.png">
+		<a href="javascript:void(0);" class="other_img">&#8635; Other Image</a>
+	</div>
+
+</div>
+
+<!-- Choose difficulty -->
+<div id="diff_choose">
+	<h1>Choose Difficulty</h1>
+	<button class="choice easy" data-diff="easy"><span>&#128519;</span> Easy</button>
+	<button class="choice norm" data-diff="medium"><span>&#128526;</span> Medium</button>
+	<button class="choice hard" data-diff="hard"><span>&#128534;</span> Hard</button>
+	<button class="choice nightm" data-diff="nightmare"><span>&#128520;</span> Nightmare</button>
+</div>
+
+<!-- opens the overlay -->
+<button id="menu_opener">
+	<span></span>
+	<span></span>
+	<span></span>
+</button>
+
+
+<!-- partial -->
+<script src='https://cdn.jsdelivr.net/gh/Balintgacsf/picture_puzzle@2.0.0/js/img_puzzle.min.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>
