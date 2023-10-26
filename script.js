@@ -31,7 +31,7 @@ document.addEventListener('DOMContentLoaded', function () {
 		let difficulty = img_pzl.gameOver.results.played_difficulty;
 		
 		// output the personalized message
-		let finalText = "<span>Congratulations</span>! You did it in <span>"+moves+" moves</span> and <span>"+f_minutes+" minute(s)</span> and <span>"+f_seconds+" seconds</span>. The <span>difficulty</span> was <span>"+ difficulty+"</span>.";
+		let finalText = "<span>Felicitaciones</span>! Lo lograste en <span>"+moves+" movimientos</span> y <span>"+f_minutes+" minutos(s)</span> y <span>"+f_seconds+" segundos</span>. La <span>dificultad</span> fue <span>"+ difficulty+"</span>.";
 		document.getElementById("result").innerHTML = finalText;
 	}
 
